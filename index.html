@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Calculadora</title>
+  </head>
+  <body>
+    <script type="text/javascript" src="javascript.js"></script>
+    <table width=180>
+      <tr>
+        <input id="mostrar" placeholder="0" disabled>
+      </tr>
+      <tr>
+        <td><input type="button" id="uno" name="1" value="1" onclick="mostrarOperacion(this.value)" ></td>
+        <td><input type="button" id="dos" name="2" value="2" onclick="mostrarOperacion(this.value)"  ></td>
+        <td><input type="button" id="tres" name="3" value="3" onclick="mostrarOperacion(this.value)"  ></td>
+        <td><input type="button" id="mas" name="+" value="+" onclick="mostrarOperacion(this.value)"  ></td>
+        <td><input type="button" id="mas" name="C" value="C" onclick="borrarUltimo()"  ></td>
+      </tr>
+      <tr>
+        <td><input type="button" id="cuatro" name="4" value="4" onclick="mostrarOperacion(this.value)" ></td>
+        <td><input type="button" id="cinco" name="5" value="5" onclick="mostrarOperacion(this.value)" ></td>
+        <td><input type="button" id="seis" name="6" value="6" onclick="mostrarOperacion(this.value)" ></td>
+        <td><input type="button" id="siete" name="-" value="-" onclick="mostrarOperacion(this.value)" ></td>
+        <td><input type="button" id="mas" name="CA" value="CA" onclick="borrarTodo()"  ></td>
+      </tr>
+      <tr>
+        <td><input type="button" id="siete" name="7" value="7" onclick="mostrarOperacion(this.value)" ></td>
+        <td><input type="button" id="ocho" name="8" value="8" onclick="mostrarOperacion(this.value)" ></td>
+        <td><input type="button" id="nueve" name="9" value="9" onclick="mostrarOperacion(this.value)" ></td>
+        <td><input type="button" id="por" name="*" value="*" onclick="mostrarOperacion(this.value)" ></td>
+      </tr>
+      <tr>
+        <td><input type="button" id="punto" name="." value="." onclick="mostrarOperacion(this.value)" ></td>
+        <td><input type="button" id="cero" name="0" value="0" onclick="mostrarOperacion(this.value)" ></td>
+        <td><input type="button" id="igual" name="=" value="=" onclick="resultado()" ></td>
+        <td><input type="button" id="entre" name="/" value="/" onclick="mostrarOperacion(this.value)" ></td>
+      </tr>
+    </table>
+
+  </body>
+</html>
